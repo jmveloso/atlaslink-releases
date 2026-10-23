@@ -6,21 +6,27 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.2.2
+## 🆕 What's New in 0.3.3
 
-- **Session Manager** — Desktop UI for managing active sessions with permission profiles and live session controls
-- **In-session text chat** — Real-time messaging over the encrypted WebRTC data channel during remote sessions
-- **Recent Connections** — Enhanced connection history with favorites, custom aliases, and quick reconnect
-- **Remembered passwords** — Optional password storage using Windows DPAPI encryption for quick reconnects
-- **Improved reliability** — Server automatically marks orphaned sessions as ended on restart for accurate session state
+- **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers for chat/files/info, and keyboard isolation for better UX
+- **Bidirectional file transfer** — Transfer files between host and viewer over encrypted WebRTC data channel (permission default-off)
+- **Multi-monitor switching** — Switch between displays without reconnecting; supports Fit/Actual/Stretch view modes with precise pointer mapping
+- **Remote system audio** — One-way system audio playback from host to viewer (opt-in permission, not enabled by default)
+- **Server hardening** — Dev/live database isolation, atomic ownership claiming, unapproved devices blocked from initiating connections, registration rate limiting
 
 ---
 
 ## 📥 Download
 
-Download the latest Windows installer from the [**Releases page**](https://github.com/jmveloso/atlaslink-releases/releases/latest).
+**Latest Release: [AtlasLink 0.3.3](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.3)** (77.7 MB)
 
-**Installer naming:** `AtlasLink-<version>-setup.exe` (e.g., `AtlasLink-0.2.2-setup.exe`)
+🔗 **[Download AtlasLink-0.3.3-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.3/AtlasLink-0.3.3-setup.exe)**
+
+**SHA-256:** `0AC480E7ACA0375CD040BBB02DA9F1DD041E6AB9F081EFBB4CCA02039E94DD70`
+
+---
+
+View all releases on the [**Releases page**](https://github.com/jmveloso/atlaslink-releases/releases).
 
 ---
 
@@ -29,11 +35,15 @@ Download the latest Windows installer from the [**Releases page**](https://githu
 ### Desktop Application
 
 - **Full remote control** — Complete screen, keyboard, and mouse control over WebRTC
+- **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers (chat/files/info), and real-time connection diagnostics
+- **Bidirectional file transfer** — Transfer files between host and viewer over encrypted WebRTC data channel (permission-controlled)
 - **In-session text chat** — Real-time messaging over the encrypted WebRTC data channel
+- **Remote system audio** — One-way system audio playback from host to viewer (opt-in permission)
+- **Clipboard integration** — Push/pull clipboard text between host and viewer
+- **Multi-monitor support** — Switch between displays during sessions without reconnecting; select Fit/Actual/Stretch view modes
 - **Session Manager** — Manage active sessions with permission profiles and live controls
 - **Recent Connections** — Connection history with favorites, custom aliases, and quick reconnect
 - **Remembered passwords** — Optional password storage using Windows DPAPI encryption
-- **Multi-monitor support** — Select which display to share during sessions
 - **Session security** — Per-session passwords, approval prompts, view-only mode, and automatic timeouts
 - **Modern UI** — Dark/light theme support with native Windows styling
 
@@ -42,7 +52,9 @@ Download the latest Windows installer from the [**Releases page**](https://githu
 - **Self-hosted architecture** — Your infrastructure, your control; no per-seat licensing or cloud dependencies
 - **Admin dashboard** — Browser-based management console for device inventory, live session monitoring, and security policy configuration
 - **Enterprise security** — Device enrollment approval, session passwords, permission-based access control, and comprehensive audit trails
-- **Session reliability** — Automatic orphaned session cleanup on server restart
+- **Permission system** — Granular controls for file transfer, remote audio, and connection authorization
+- **Session reliability** — Automatic orphaned session cleanup on server restart, atomic database ownership
+- **Server hardening** — Dev/live database isolation, registration rate limiting, unapproved device blocking
 - **TURN relay support** — Optional NAT traversal for devices behind restrictive firewalls
 
 ---
@@ -95,21 +107,23 @@ The control server is deployed and managed by your organization's IT administrat
 
 ## 🔐 Verifying Downloads
 
-Verify the integrity of the installer by checking its SHA-256 checksum. The official checksum is published in each release's notes on the [Releases page](https://github.com/jmveloso/atlaslink-releases/releases).
+Verify the integrity of the installer by checking its SHA-256 checksum against the official checksum published in the release notes.
 
 ### Windows PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-<version>-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.3-setup.exe
 ```
+
+Expected output: `0AC480E7ACA0375CD040BBB02DA9F1DD041E6AB9F081EFBB4CCA02039E94DD70`
 
 ### Windows Command Prompt
 
 ```cmd
-certutil -hashfile AtlasLink-<version>-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.3-setup.exe SHA256
 ```
 
-Compare the output with the checksum in the release notes.
+Expected output: `0ac480e7aca0375cd040bbb02da9f1dd041e6ab9f081efbb4cca02039e94dd70`
 
 ---
 
@@ -127,16 +141,30 @@ To upgrade AtlasLink:
 
 ## 🔒 Security Notes
 
-- **Default policy:** New installations require device approval and session passwords by default
+- **Default policy:** New installations require device approval and session passwords by default; file transfer and remote audio permissions are disabled by default
 - **Password storage (server):** All server-side passwords (admin and user accounts) are hashed with PBKDF2 (210,000 iterations, SHA-256)
 - **Remembered passwords (desktop):** Optional remembered session passwords are encrypted using Windows DPAPI (Data Protection API) and stored locally
 - **Session passwords:** Use challenge-response protocol (no passwords transmitted over the network)
-- **WebRTC encryption:** Peer-to-peer connections use DTLS-SRTP encryption for screen content and input; text chat uses the encrypted data channel
+- **WebRTC encryption:** Peer-to-peer connections use DTLS-SRTP encryption for screen content, input, and audio; text chat and file transfer use encrypted data channels
+- **Permission system:** Granular controls for file transfer and remote audio capabilities; unapproved devices cannot initiate connections
 - **Admin API:** Bearer token authentication with configurable expiration; rate-limited to 5 failed login attempts per 15-minute window per IP
+- **Registration rate limiting:** Device registration attempts are rate-limited to 12 per minute per IP address
 - **Audit trail:** All administrative actions are logged with timestamps and attribution
 - **TLS recommended:** Use TLS certificates in production to encrypt signaling traffic
 
 **Firewall Note:** Restrict control server access to your office network. Use external firewall rules or VPN for production deployments.
+
+---
+
+## 📜 Version History
+
+### 0.3.3 (Latest) — 2026-10-23
+
+Session viewer redesign with floating controls, bidirectional file transfer, multi-monitor switching, remote system audio, and server hardening.
+
+### 0.2.2 — 2026-10-23
+
+Session Manager, in-session text chat, Recent Connections with favorites, remembered passwords, and automatic orphaned session cleanup.
 
 ---
 
