@@ -6,6 +6,16 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
+## 🆕 What's New in 0.2.2
+
+- **Session Manager** — Desktop UI for managing active sessions with permission profiles and live session controls
+- **In-session text chat** — Real-time messaging over the encrypted WebRTC data channel during remote sessions
+- **Recent Connections** — Enhanced connection history with favorites, custom aliases, and quick reconnect
+- **Remembered passwords** — Optional password storage using Windows DPAPI encryption for quick reconnects
+- **Improved reliability** — Server automatically marks orphaned sessions as ended on restart for accurate session state
+
+---
+
 ## 📥 Download
 
 Download the latest Windows installer from the [**Releases page**](https://github.com/jmveloso/atlaslink-releases/releases/latest).
@@ -16,13 +26,24 @@ Download the latest Windows installer from the [**Releases page**](https://githu
 
 ## ✨ Key Features
 
+### Desktop Application
+
 - **Full remote control** — Complete screen, keyboard, and mouse control over WebRTC
-- **Self-hosted architecture** — Your infrastructure, your control; no per-seat licensing or cloud dependencies
-- **Enterprise security** — Device enrollment approval, session passwords, permission-based access control, and comprehensive audit trails
-- **Admin dashboard** — Browser-based management console for device inventory, live session monitoring, and security policy configuration
-- **TURN relay support** — Optional NAT traversal for devices behind restrictive firewalls
+- **In-session text chat** — Real-time messaging over the encrypted WebRTC data channel
+- **Session Manager** — Manage active sessions with permission profiles and live controls
+- **Recent Connections** — Connection history with favorites, custom aliases, and quick reconnect
+- **Remembered passwords** — Optional password storage using Windows DPAPI encryption
 - **Multi-monitor support** — Select which display to share during sessions
 - **Session security** — Per-session passwords, approval prompts, view-only mode, and automatic timeouts
+- **Modern UI** — Dark/light theme support with native Windows styling
+
+### Control Server & Admin Dashboard
+
+- **Self-hosted architecture** — Your infrastructure, your control; no per-seat licensing or cloud dependencies
+- **Admin dashboard** — Browser-based management console for device inventory, live session monitoring, and security policy configuration
+- **Enterprise security** — Device enrollment approval, session passwords, permission-based access control, and comprehensive audit trails
+- **Session reliability** — Automatic orphaned session cleanup on server restart
+- **TURN relay support** — Optional NAT traversal for devices behind restrictive firewalls
 
 ---
 
@@ -107,10 +128,11 @@ To upgrade AtlasLink:
 ## 🔒 Security Notes
 
 - **Default policy:** New installations require device approval and session passwords by default
-- **Password storage:** All passwords are hashed with PBKDF2 (210,000 iterations, SHA-256)
+- **Password storage (server):** All server-side passwords (admin and user accounts) are hashed with PBKDF2 (210,000 iterations, SHA-256)
+- **Remembered passwords (desktop):** Optional remembered session passwords are encrypted using Windows DPAPI (Data Protection API) and stored locally
 - **Session passwords:** Use challenge-response protocol (no passwords transmitted over the network)
-- **WebRTC encryption:** Peer-to-peer connections use DTLS-SRTP encryption
-- **Admin API:** Bearer token authentication with configurable expiration
+- **WebRTC encryption:** Peer-to-peer connections use DTLS-SRTP encryption for screen content and input; text chat uses the encrypted data channel
+- **Admin API:** Bearer token authentication with configurable expiration; rate-limited to 5 failed login attempts per 15-minute window per IP
 - **Audit trail:** All administrative actions are logged with timestamps and attribution
 - **TLS recommended:** Use TLS certificates in production to encrypt signaling traffic
 
