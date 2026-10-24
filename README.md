@@ -6,7 +6,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.3
+## 🆕 What's New in 0.3.4
 
 - **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers for chat/files/info, and keyboard isolation for better UX
 - **Bidirectional file transfer** — Transfer files between host and viewer over encrypted WebRTC data channel (permission default-off)
@@ -18,11 +18,11 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 📥 Download
 
-**Latest Release: [AtlasLink 0.3.3](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.3)** (77.7 MB)
+**Latest Release: [AtlasLink 0.3.4](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.4)** (77.7 MB)
 
-🔗 **[Download AtlasLink-0.3.3-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.3/AtlasLink-0.3.3-setup.exe)**
+🔗 **[Download AtlasLink-0.3.4-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.4/AtlasLink-0.3.4-setup.exe)**
 
-**SHA-256:** `0AC480E7ACA0375CD040BBB02DA9F1DD041E6AB9F081EFBB4CCA02039E94DD70`
+**SHA-256:** `8F9951109783B55F7B2CFDD8433CE15EF8C2E3A63E085F003A9524310F985D7D`
 
 ---
 
@@ -75,7 +75,7 @@ View all releases on the [**Releases page**](https://github.com/jmveloso/atlasli
 |------------|---------|
 | **Runtime** | Node.js 18 or later |
 | **Database** | SQLite 3 (embedded) |
-| **Network Ports** | One TCP port for HTTP/HTTPS and WebSocket (default: 8080) |
+| **Network Ports** | One TCP port for HTTP/HTTPS and WebSocket (default: 7080) |
 | **Optional** | TURN relay (only needed for symmetric NAT or restrictive firewalls) |
 
 ---
@@ -88,7 +88,7 @@ View all releases on the [**Releases page**](https://github.com/jmveloso/atlasli
 2. **Run** the installer and follow the setup wizard
 3. **Launch** AtlasLink from the Start Menu or Desktop shortcut
 4. **Configure** the Signaling server URL in Settings:
-   - Point to your organization's control server (e.g., `ws://office-server:8080`)
+   - Point to your organization's control server (e.g., `ws://office-server:7080`)
 5. **Wait for approval** — Your device will appear in the admin dashboard as "Pending"
 6. **Connect** once approved by your IT administrator
 
@@ -112,18 +112,18 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 ### Windows PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.3-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.4-setup.exe
 ```
 
-Expected output: `0AC480E7ACA0375CD040BBB02DA9F1DD041E6AB9F081EFBB4CCA02039E94DD70`
+Expected output: `8f9951109783b55f7b2cfdd8433ce15ef8c2e3a63e085f003a9524310f985d7d`
 
 ### Windows Command Prompt
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.3-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.4-setup.exe SHA256
 ```
 
-Expected output: `0ac480e7aca0375cd040bbb02da9f1dd041e6ab9f081efbb4cca02039e94dd70`
+Expected output: `8f9951109783b55f7b2cfdd8433ce15ef8c2e3a63e085f003a9524310f985d7d`
 
 ---
 
