@@ -18,7 +18,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 🔗 **[Download AtlasLink-0.3.12-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.12/AtlasLink-0.3.12-setup.exe)**
 
-**SHA-256:** `14C98464EC39DE5F836E38453FC02D135CD684CCC4E0CFEAA3903214AEA91086`
+**SHA-256:** `EF8E7043B353A1D6EEE24B50CB17803FC5C5E2F89AD62EA9655ECAA12BF4E4DE`
 
 ---
 
@@ -111,7 +111,7 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.12-setup.exe
 ```
 
-Expected output: `14c98464ec39de5f836e38453fc02d135cd684ccc4e0cfeaa3903214aea91086`
+Expected output: `ef8e7043b353a1d6eee24b50cb17803fc5c5e2f89ad62ea9655ecaa12bf4e4de`
 
 ### Windows Command Prompt
 
@@ -119,7 +119,7 @@ Expected output: `14c98464ec39de5f836e38453fc02d135cd684ccc4e0cfeaa3903214aea910
 certutil -hashfile AtlasLink-0.3.12-setup.exe SHA256
 ```
 
-Expected output: `14c98464ec39de5f836e38453fc02d135cd684ccc4e0cfeaa3903214aea91086`
+Expected output: `ef8e7043b353a1d6eee24b50cb17803fc5c5e2f89ad62ea9655ecaa12bf4e4de`
 
 ---
 
