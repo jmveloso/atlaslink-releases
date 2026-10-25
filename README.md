@@ -6,11 +6,11 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.14
+## 🆕 What's New in 0.3.15
 
-**Installer:** `AtlasLink-0.3.14-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.15-setup.exe` (SIZE_PLACEHOLDER)
 
-AtlasLink 0.3.14 adds an enrolment token, so only PCs you set up can join your server. PCs that are already registered keep working without any change.
+AtlasLink 0.3.15 adds remote restart: restart the PC you are connected to, and AtlasLink reconnects when it is back.
 
 ---
 
@@ -155,6 +155,18 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.15 — 
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+
+**Installer:** `AtlasLink-0.3.15-setup.exe` (SIZE_PLACEHOLDER)
+
+AtlasLink 0.3.15 adds remote restart: restart the PC you are connected to, and AtlasLink reconnects when it is back.
+
+**SHA-256:** *(see release page)*
+
+---
 
 ### 0.3.14 — 2026-10-25
 
