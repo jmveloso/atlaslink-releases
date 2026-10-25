@@ -8,7 +8,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 🆕 What's New in 0.3.15
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (SIZE_PLACEHOLDER)
+**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.15 adds remote restart: restart the PC you are connected to, and AtlasLink reconnects when it is back.
 
@@ -156,23 +156,23 @@ To upgrade AtlasLink:
 
 ## 📜 Version History
 
-### 0.3.15 — 
+### 0.3.15 — 2026-10-25
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (SIZE_PLACEHOLDER)
+**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.15 adds remote restart: restart the PC you are connected to, and AtlasLink reconnects when it is back.
 
-**SHA-256:** *(see release page)*
+**SHA-256:** `26F575CCB35C53C973004B1B2BE912C1788ACE15BA60BDD6F18DB639DE326DC9`
 
 ---
 
 ### 0.3.14 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.14)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.14-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.14 adds an enrolment token, so only PCs you set up can join your server. PCs that are already registered keep working without any change.
 
@@ -182,9 +182,9 @@ AtlasLink 0.3.14 adds an enrolment token, so only PCs you set up can join your s
 
 ### 0.3.13 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.13)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.13-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.13 makes the TURN relay more dependable and keeps relayed sessions from overloading the relay server.
 
@@ -194,9 +194,9 @@ AtlasLink 0.3.13 makes the TURN relay more dependable and keeps relayed sessions
 
 ### 0.3.12 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.12-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.12 updates itself. Install it once; from then on new releases download and install automatically.
 
@@ -206,9 +206,9 @@ AtlasLink 0.3.12 updates itself. Install it once; from then on new releases down
 
 ### 0.3.11 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.11)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.11-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.11 keeps admin console sessions across server restarts. Redeploying or restarting the control server no longer signs administrators out.
 
@@ -220,9 +220,9 @@ AtlasLink 0.3.11 keeps admin console sessions across server restarts. Redeployin
 
 ### 0.3.10 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.10)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.10-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.10 fixes the most common cause of sessions being interrupted. Short drops of the connection to the control server — even a few seconds — ended the session about 30 seconds later, even though everything had already reconnected.
 
@@ -232,9 +232,9 @@ AtlasLink 0.3.10 fixes the most common cause of sessions being interrupted. Shor
 
 ### 0.3.9 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.9)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.9-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.9 adds a Server information tab to the admin console, connection health insights, and tools to diagnose TURN relay configuration.
 
@@ -253,9 +253,9 @@ AtlasLink 0.3.9 adds a Server information tab to the admin console, connection h
 
 ### 0.3.8 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.8)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.8-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Sessions between PCs that cannot reach each other directly (different networks, strict firewalls, mobile hotspots) now fall back to your relay as intended.
 
@@ -270,9 +270,9 @@ AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Ses
 
 ### 0.3.7 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.7)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.7-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.7 adds visibility into connection interruptions. When a session shows **Reconnecting**, the desktop app reports the duration and outcome to the control server, and administrators can see these events in the audit log and overview dashboard.
 
@@ -288,9 +288,9 @@ AtlasLink 0.3.7 adds visibility into connection interruptions. When a session sh
 
 ### 0.3.6 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.6)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.6-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.6 fixes a critical bug that could end a session immediately after the password was accepted and then leave the remote PC unavailable for about a minute.
 
@@ -305,9 +305,9 @@ AtlasLink 0.3.6 fixes a critical bug that could end a session immediately after 
 
 ### 0.3.5 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.5)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.5-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.5 delivers video quality and session-handling improvements that were described in the 0.3.4 release notes but were not included in that installer. If you installed 0.3.4, upgrade to get these features.
 
@@ -325,9 +325,9 @@ AtlasLink 0.3.5 delivers video quality and session-handling improvements that we
 
 ### 0.3.4 — 2026-10-24
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.4)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.4-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.4 is a security and reliability release.
 
@@ -344,9 +344,9 @@ AtlasLink 0.3.4 is a security and reliability release.
 
 ### 0.3.3 — 2026-10-23
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.3)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.3-setup.exe` (77.7 MB)
 
 AtlasLink 0.3.3 features a redesigned session viewer, file transfer, multi-monitor support, and remote audio.
 
@@ -364,9 +364,9 @@ AtlasLink 0.3.3 features a redesigned session viewer, file transfer, multi-monit
 
 ### 0.2.2 — 2026-10-23
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.15)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.2.2)**
 
-**Installer:** `AtlasLink-0.3.15-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.2.2-setup.exe` (78.2 MB)
 
 AtlasLink 0.2.2 introduces session management, chat, and connection history features.
 
