@@ -6,7 +6,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.4
+## 🆕 What's New in 0.3.5
 
 - **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers for chat/files/info, and keyboard isolation for better UX
 - **Bidirectional file transfer** — Transfer files between host and viewer over encrypted WebRTC data channel (permission default-off)
@@ -18,11 +18,11 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 📥 Download
 
-**Latest Release: [AtlasLink 0.3.4](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.4)** (77.7 MB)
+**Latest Release: [AtlasLink 0.3.5](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.5)** (77.7 MB)
 
-🔗 **[Download AtlasLink-0.3.4-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.4/AtlasLink-0.3.4-setup.exe)**
+🔗 **[Download AtlasLink-0.3.5-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.5/AtlasLink-0.3.5-setup.exe)**
 
-**SHA-256:** `8F9951109783B55F7B2CFDD8433CE15EF8C2E3A63E085F003A9524310F985D7D`
+**SHA-256:** `42216393F06E0886A26080B310844E881FA9838981061A84FB5D5B173E281035`
 
 ---
 
@@ -112,18 +112,18 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 ### Windows PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.4-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.5-setup.exe
 ```
 
-Expected output: `8f9951109783b55f7b2cfdd8433ce15ef8c2e3a63e085f003a9524310f985d7d`
+Expected output: `42216393f06e0886a26080b310844e881fa9838981061a84fb5d5b173e281035`
 
 ### Windows Command Prompt
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.4-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.5-setup.exe SHA256
 ```
 
-Expected output: `8f9951109783b55f7b2cfdd8433ce15ef8c2e3a63e085f003a9524310f985d7d`
+Expected output: `42216393f06e0886a26080b310844e881fa9838981061a84fb5d5b173e281035`
 
 ---
 
