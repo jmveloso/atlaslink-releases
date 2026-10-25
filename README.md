@@ -8,11 +8,13 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 🆕 What's New in 0.3.8
 
-- **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers for chat/files/info, and keyboard isolation for better UX
-- **Bidirectional file transfer** — Transfer files between host and viewer over encrypted WebRTC data channel (permission default-off)
-- **Multi-monitor switching** — Switch between displays without reconnecting; supports Fit/Actual/Stretch view modes with precise pointer mapping
-- **Remote system audio** — One-way system audio playback from host to viewer (opt-in permission, not enabled by default)
-- **Server hardening** — Dev/live database isolation, atomic ownership claiming, unapproved devices blocked from initiating connections, registration rate limiting
+AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Sessions between PCs that cannot reach each other directly (different networks, strict firewalls, mobile hotspots) now fall back to your relay as intended.
+
+- **Fixed: TURN relay never used after app starts** — The relay credentials sent by the control server at sign-in were lost before the app was ready to receive them, so the relay was only available after the first reconnect
+- **Fixed: TURN relay stops working after an hour** — Relay credentials expire (one hour by default) but were only renewed on reconnect. The app now renews them every 30 minutes and before each session
+- **Main process buffering** — The `registered` message carrying TURN credentials is held until the renderer process has loaded, then delivered
+- **Periodic renewal** — Fresh TURN credentials are fetched automatically every 30 minutes and before creating peer connections
+- **Protocol extension** — The `ping` message now accepts an optional `wantTurn` field; `pong` responses include `turnEndpoint` when requested and the client is registered
 
 ---
 
@@ -158,15 +160,125 @@ To upgrade AtlasLink:
 
 ## 📜 Version History
 
-### 0.3.3 (Latest) — 2026-10-23
+### 0.3.8 — 2026-10-25
 
-Session viewer redesign with floating controls, bidirectional file transfer, multi-monitor switching, remote system audio, and server hardening.
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.8)**
+
+AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working properly.
+
+- **Fixed: TURN relay never used after app starts** — Relay credentials sent at sign-in were lost before the renderer process was ready to receive them
+- **Fixed: TURN relay stops working after one hour** — Credentials expired but were never renewed automatically
+- **Periodic credential renewal** — Fresh TURN credentials are now fetched every 30 minutes and before each session
+- **Main process message buffering** — The `registered` message is held until the renderer finishes loading
+
+**Compatibility:** The startup fix works with any server version. Periodic renewal requires a 0.3.8 server.
+
+**SHA-256:** `45479D677D6C8E9B4CA85B4059454826561E95E5B2F6187A4C7F87F9695551A0`
+
+---
+
+### 0.3.7 — 2026-10-25
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.7)**
+
+AtlasLink 0.3.7 adds visibility into connection interruptions for administrators.
+
+- **Interruption reports in audit log** — New **Session interrupted** event type records what dropped (signaling/peer/ICE), duration, and outcome
+- **24-hour interruption metrics** — Admin overview shows interruption counts split by outcome (recovered/ended)
+- **Automatic reporting** — Desktop app sends reports when reconnections finish, queued if the control server itself was down
+- **Protocol extension** — `ping` messages now accept `interruptions` array; older servers ignore it gracefully
+
+**Compatibility:** 0.3.7 clients work with older servers (reporting silently disabled). Older clients work with 0.3.7 servers.
+
+**SHA-256:** `88E71AEA4E6FB6F314F88E1F52A45078B0019D3E8F0449D6176019CEA3D3CBB2`
+
+---
+
+### 0.3.6 — 2026-10-25
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.6)**
+
+AtlasLink 0.3.6 fixes a critical session crash bug.
+
+- **Fixed: Session ending with "Could not start screen capture" error** — Duplicate password proofs no longer cause the peer connection to be replaced mid-initialization
+- **Fixed: Remote PC stuck "busy" after failed connection** — Per-session state flags now reset properly on teardown
+- **Screen capture lifecycle management** — Added `startingMedia` and `mediaStarted` flags to prevent concurrent capture attempts
+- **Immediate recovery** — Host PC is no longer unavailable for ~60 seconds after a failed connection
+
+**Compatibility:** Client-side fix only. Update PCs you connect **to** first.
+
+**SHA-256:** `69C3EB71E83486B075FB4A12119FAC1BAFED1A413FCEAE9CD82BDF1A4C1CFCD6`
+
+---
+
+### 0.3.5 — 2026-10-25
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.5)**
+
+AtlasLink 0.3.5 delivers video quality and session-handling improvements.
+
+- **Smoother video on lossy networks** — Lost packets are retransmitted (RTX/FEC) instead of forcing keyframes
+- **Faster quality ramp-up** — Sessions start at 2 Mbps (up from ~0.3 Mbps)
+- **Sharper text under congestion** — Screen content maintains resolution when bandwidth drops
+- **Reliable session cancel** — Visible Cancel button, immediate remote prompt dismissal, stale prompt cleanup
+- **Redesigned audit log** — Summary cards with 24-hour counts act as filters
+- **Publisher metadata** — Installer now reports AtlasLink in Windows file properties
+
+**Compatibility:** 0.3.5 clients work with 0.3.4+ servers. Video improvements apply when both PCs run 0.3.5.
+
+**SHA-256:** `42216393F06E0886A26080B310844E881FA9838981061A84FB5D5B173E281035`
+
+---
+
+### 0.3.4 — 2026-10-24
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.4)**
+
+AtlasLink 0.3.4 is a security and reliability release.
+
+- **Hardened admin console sign-in** — Optional TOTP two-factor authentication, cookie-based sessions with token revocation, account-level login throttling
+- **Safer defaults for new servers** — Open access between devices is now off by default
+- **TURN relay configuration** — Manual TURN/STUN servers in Settings now take effect
+- **New default control-server port** — 7080 (previously 8080)
+
+**Compatibility:** 0.3.3 clients continue to work with 0.3.4 servers.
+
+**SHA-256:** `8F9951109783B55F7B2CFDD8433CE15EF8C2E3A63E085F003A9524310F985D7D`
+
+---
+
+### 0.3.3 — 2026-10-23
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.3)**
+
+AtlasLink 0.3.3 features a redesigned session viewer, file transfer, multi-monitor support, and remote audio.
+
+- **Redesigned session viewer** — Floating controls with auto-hiding toolbar, side drawers for chat/files/info
+- **Bidirectional file transfer** — Transfer files over encrypted WebRTC data channel (permission default-off)
+- **Multi-monitor switching** — Switch between displays without reconnecting; supports Fit/Actual/Stretch view modes
+- **Remote system audio** — One-way system audio playback from host to viewer (opt-in permission)
+- **Server hardening** — Dev/live database isolation, atomic ownership claiming, unapproved devices blocked
+
+**Compatibility:** Older clients (0.2.x) work with 0.3.3 servers. New features require both sides running 0.3.3.
+
+**SHA-256:** `0AC480E7ACA0375CD040BBB02DA9F1DD041E6AB9F081EFBB4CCA02039E94DD70`
+
+---
 
 ### 0.2.2 — 2026-10-23
 
-Session Manager, in-session text chat, Recent Connections with favorites, remembered passwords, and automatic orphaned session cleanup.
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.2.2)**
 
----
+AtlasLink 0.2.2 introduces session management, chat, and connection history features.
+
+- **Session Manager** — Manage active sessions with permission profiles and live controls
+- **In-session text chat** — Real-time messaging over encrypted WebRTC data channel
+- **Recent Connections** — Connection history with favorites, custom aliases, and quick reconnect
+- **Remembered passwords** — Optional password storage using Windows DPAPI encryption
+- **Automatic cleanup** — Orphaned sessions are cleaned up on server restart
+
+**SHA-256:** `F5DE7549F87F263A37ABCED17FA573DECE58034749CB942946C36292D3B5CAAE`
+
 
 ## 📋 Releases & Changelog
 
