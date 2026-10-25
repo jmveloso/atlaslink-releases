@@ -6,16 +6,9 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.9
+## 🆕 What's New in 0.3.10
 
-AtlasLink 0.3.9 adds a Server information tab to the admin console, connection health insights, and tools to diagnose TURN relay configuration.
-
-- **Server tab** — View server version, uptime, database size, configuration summary, and security warnings with actionable fixes
-- **TURN diagnostics** — Test relay tool performs a real allocation attempt to distinguish secret mismatches from unreachable servers
-- **Connection health insights** — See which PCs drop connections most often or need the relay, ranked over the last 7 days
-- **Outdated app detection** — Devices below the current server version are tagged and filterable
-- **Direct/Relay session badges** — Sessions now show whether they used a direct peer connection or relayed through TURN
-- **Better error responses** — Wrong-password replies are 403 instead of 401, preventing unintended sign-outs from the admin console
+**Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)
 
 ---
 
@@ -160,6 +153,16 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.10 — 
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.10)**
+
+**Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)  
+
+**SHA-256:** *(see release page)*
+
+---
 
 ### 0.3.9 — 2026-10-25
 
