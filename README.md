@@ -154,21 +154,21 @@ To upgrade AtlasLink:
 
 ## 📜 Version History
 
-### 0.3.12 — 
+### 0.3.12 — 2026-10-25
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
 
 **Installer:** `AtlasLink-0.3.12-setup.exe` (SIZE_PLACEHOLDER)  
 
-**SHA-256:** *(see release page)*
+**SHA-256:** `EF8E7043B353A1D6EEE24B50CB17803FC5C5E2F89AD62EA9655ECAA12BF4E4DE`
 
 ---
 
 ### 0.3.11 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.11)**
 
-**Installer:** `AtlasLink-0.3.12-setup.exe` (SIZE_PLACEHOLDER)  
+**Installer:** `AtlasLink-0.3.11-setup.exe` (SIZE_PLACEHOLDER)  
 
 **Compatibility:** Backward compatible: 0.3.10 and older desktop apps work with a 0.3.11 server without changes
 
@@ -178,9 +178,9 @@ To upgrade AtlasLink:
 
 ### 0.3.10 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.10)**
 
-**Installer:** `AtlasLink-0.3.12-setup.exe` (SIZE_PLACEHOLDER)  
+**Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)  
 
 **SHA-256:** *(see release page)*
 
@@ -188,7 +188,7 @@ To upgrade AtlasLink:
 
 ### 0.3.9 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.9)**
 
 AtlasLink 0.3.9 adds a Server information tab to the admin console, connection health insights, and tools to diagnose TURN relay configuration.
 
@@ -207,7 +207,7 @@ AtlasLink 0.3.9 adds a Server information tab to the admin console, connection h
 
 ### 0.3.8 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.8)**
 
 AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Sessions between PCs that cannot reach each other directly (different networks, strict firewalls, mobile hotspots) now fall back to your relay as intended.
 
@@ -222,7 +222,7 @@ AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Ses
 
 ### 0.3.7 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.7)**
 
 AtlasLink 0.3.7 adds visibility into connection interruptions. When a session shows **Reconnecting**, the desktop app reports the duration and outcome to the control server, and administrators can see these events in the audit log and overview dashboard.
 
@@ -238,7 +238,7 @@ AtlasLink 0.3.7 adds visibility into connection interruptions. When a session sh
 
 ### 0.3.6 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.6)**
 
 AtlasLink 0.3.6 fixes a critical bug that could end a session immediately after the password was accepted and then leave the remote PC unavailable for about a minute.
 
@@ -253,7 +253,7 @@ AtlasLink 0.3.6 fixes a critical bug that could end a session immediately after 
 
 ### 0.3.5 — 2026-10-25
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.5)**
 
 AtlasLink 0.3.5 delivers video quality and session-handling improvements that were described in the 0.3.4 release notes but were not included in that installer. If you installed 0.3.4, upgrade to get these features.
 
@@ -271,7 +271,7 @@ AtlasLink 0.3.5 delivers video quality and session-handling improvements that we
 
 ### 0.3.4 — 2026-10-24
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.4)**
 
 AtlasLink 0.3.4 is a security and reliability release.
 
@@ -288,7 +288,7 @@ AtlasLink 0.3.4 is a security and reliability release.
 
 ### 0.3.3 — 2026-10-23
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.3)**
 
 AtlasLink 0.3.3 features a redesigned session viewer, file transfer, multi-monitor support, and remote audio.
 
@@ -306,7 +306,7 @@ AtlasLink 0.3.3 features a redesigned session viewer, file transfer, multi-monit
 
 ### 0.2.2 — 2026-10-23
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.2.2)**
 
 AtlasLink 0.2.2 introduces session management, chat, and connection history features.
 
