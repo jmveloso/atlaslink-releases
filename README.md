@@ -8,6 +8,8 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 🆕 What's New in 0.3.13
 
+**Installer:** `AtlasLink-0.3.13-setup.exe` (77.7 MB)
+
 **Installer:** `AtlasLink-0.3.13-setup.exe` (SIZE_PLACEHOLDER)
 
 ---
