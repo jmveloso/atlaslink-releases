@@ -6,9 +6,9 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.12
+## 🆕 What's New in 0.3.13
 
-**Installer:** `AtlasLink-0.3.12-setup.exe` (SIZE_PLACEHOLDER)
+**Installer:** `AtlasLink-0.3.13-setup.exe` (SIZE_PLACEHOLDER)
 
 ---
 
@@ -154,6 +154,16 @@ To upgrade AtlasLink:
 
 ## 📜 Version History
 
+### 0.3.13 — 
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.13)**
+
+**Installer:** `AtlasLink-0.3.13-setup.exe` (SIZE_PLACEHOLDER)  
+
+**SHA-256:** *(see release page)*
+
+---
+
 ### 0.3.12 — 2026-10-25
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.12)**
@@ -172,7 +182,7 @@ To upgrade AtlasLink:
 
 **Compatibility:** Backward compatible: 0.3.10 and older desktop apps work with a 0.3.11 server without changes
 
-**SHA-256:** *(see release page)*
+**SHA-256:** `BA3DA5751967DF2E8B6C86419749F5D8C1BA694048BF924A93D1EC0CED5FACD9`
 
 ---
 
@@ -182,7 +192,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)  
 
-**SHA-256:** *(see release page)*
+**SHA-256:** `5ABE07964BFBFF2EEE6B2CEB30C2A1F9160F6D030572B8E29EC4B4E4CFB5D48A`
 
 ---
 
@@ -201,7 +211,7 @@ AtlasLink 0.3.9 adds a Server information tab to the admin console, connection h
 
 **Compatibility:** Backward compatible: 0.3.8 and older desktop apps work with a 0.3.9 server without changes
 
-**SHA-256:** *(see release page)*
+**SHA-256:** `B46FF9677A42F0903486BC95BBB462AE6F1DE6A50EBDC20B55DC5ACFF1641FF1`
 
 ---
 
