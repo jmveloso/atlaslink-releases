@@ -6,9 +6,9 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.10
+## 🆕 What's New in 0.3.11
 
-**Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)
+**Installer:** `AtlasLink-0.3.11-setup.exe` (SIZE_PLACEHOLDER)
 
 ---
 
@@ -153,6 +153,18 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.11 — 
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.11)**
+
+**Installer:** `AtlasLink-0.3.11-setup.exe` (SIZE_PLACEHOLDER)  
+
+**Compatibility:** Backward compatible: 0.3.10 and older desktop apps work with a 0.3.11 server without changes
+
+**SHA-256:** *(see release page)*
+
+---
 
 ### 0.3.10 — 2026-10-25
 
