@@ -10,7 +10,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 **Installer:** `AtlasLink-0.3.13-setup.exe` (77.7 MB)
 
-**Installer:** `AtlasLink-0.3.13-setup.exe` (SIZE_PLACEHOLDER)
+AtlasLink 0.3.13 makes the TURN relay more dependable and keeps relayed sessions from overloading the relay server.
 
 ---
 
