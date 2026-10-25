@@ -162,7 +162,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.13-setup.exe` (77.7 MB)
 
-**Installer:** `AtlasLink-0.3.13-setup.exe` (SIZE_PLACEHOLDER)  
+AtlasLink 0.3.13 makes the TURN relay more dependable and keeps relayed sessions from overloading the relay server.
 
 **SHA-256:** `E21DFDF7672F7609724F087D35139A225909A6EC4B58C3522E6BCCD775F001E3`
 
@@ -174,7 +174,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.12-setup.exe` (77.7 MB)
 
-**Installer:** `AtlasLink-0.3.12-setup.exe` (SIZE_PLACEHOLDER)  
+AtlasLink 0.3.12 updates itself. Install it once; from then on new releases download and install automatically.
 
 **SHA-256:** `EF8E7043B353A1D6EEE24B50CB17803FC5C5E2F89AD62EA9655ECAA12BF4E4DE`
 
@@ -186,7 +186,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.11-setup.exe` (77.7 MB)
 
-**Installer:** `AtlasLink-0.3.11-setup.exe` (SIZE_PLACEHOLDER)  
+AtlasLink 0.3.11 keeps admin console sessions across server restarts. Redeploying or restarting the control server no longer signs administrators out.
 
 **Compatibility:** Backward compatible: 0.3.10 and older desktop apps work with a 0.3.11 server without changes
 
@@ -200,7 +200,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.10-setup.exe` (77.7 MB)
 
-**Installer:** `AtlasLink-0.3.10-setup.exe` (SIZE_PLACEHOLDER)  
+AtlasLink 0.3.10 fixes the most common cause of sessions being interrupted. Short drops of the connection to the control server — even a few seconds — ended the session about 30 seconds later, even though everything had already reconnected.
 
 **SHA-256:** `5ABE07964BFBFF2EEE6B2CEB30C2A1F9160F6D030572B8E29EC4B4E4CFB5D48A`
 
