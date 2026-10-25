@@ -6,12 +6,16 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.8
+## 🆕 What's New in 0.3.9
 
-AtlasLink 0.3.8 fixes critical bugs that prevented TURN relays from working. Sessions between PCs that cannot reach each other directly (different networks, strict firewalls, mobile hotspots) now fall back to your relay as intended.
+AtlasLink 0.3.9 adds a Server information tab to the admin console, connection health insights, and tools to diagnose TURN relay configuration.
 
-- **Fixed: TURN relay never used after app starts** — Relay credentials sent at sign-in were lost before the app was ready, so relays only worked after the first reconnect
-- **Fixed: TURN relay stops working after an hour** — Credentials expired but were never renewed, breaking relayed sessions silently
+- **Server tab** — View server version, uptime, database size, configuration summary, and security warnings with actionable fixes
+- **TURN diagnostics** — Test relay tool performs a real allocation attempt to distinguish secret mismatches from unreachable servers
+- **Connection health insights** — See which PCs drop connections most often or need the relay, ranked over the last 7 days
+- **Outdated app detection** — Devices below the current server version are tagged and filterable
+- **Direct/Relay session badges** — Sessions now show whether they used a direct peer connection or relayed through TURN
+- **Better error responses** — Wrong-password replies are 403 instead of 401, preventing unintended sign-outs from the admin console
 
 ---
 
@@ -156,6 +160,25 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.9 — 
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.9)**
+
+AtlasLink 0.3.9 adds a Server information tab to the admin console, connection health insights, and tools to diagnose TURN relay configuration.
+
+- **Server tab** — View server version, uptime, database size, configuration summary, and security warnings with actionable fixes
+- **TURN diagnostics** — Test relay tool performs a real allocation attempt to distinguish secret mismatches from unreachable servers
+- **Connection health insights** — See which PCs drop connections most often or need the relay, ranked over the last 7 days
+- **Outdated app detection** — Devices below the current server version are tagged and filterable
+- **Direct/Relay session badges** — Sessions now show whether they used a direct peer connection or relayed through TURN
+- **Better error responses** — Wrong-password replies are 403 instead of 401, preventing unintended sign-outs from the admin console
+
+**Compatibility:** Backward compatible: 0.3.8 and older desktop apps work with a 0.3.9 server without changes
+
+**SHA-256:** *(see release page)*
+
+---
 
 ### 0.3.8 — 2026-10-25
 
