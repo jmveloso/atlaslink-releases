@@ -6,9 +6,9 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.28
+## 🆕 What's New in 0.3.29
 
-**Installer:** `AtlasLink-0.3.28-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.29-setup.exe` (77.7 MB)
 
 **Installers:**
 
@@ -16,11 +16,11 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ## 📥 Download
 
-**Latest Release: [AtlasLink 0.3.28](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.28)** (77.7 MB)
+**Latest Release: [AtlasLink 0.3.29](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.29)** (77.7 MB)
 
-🔗 **[Download AtlasLink-0.3.28-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.28/AtlasLink-0.3.28-setup.exe)**
+🔗 **[Download AtlasLink-0.3.29-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.29/AtlasLink-0.3.29-setup.exe)**
 
-**SHA-256:** `C941B1F3F559D5E910B2A7C890EF70CC8DF3365C6F1640002441714E37912849`
+**SHA-256:** `9BBF1953F161058853B6D94CED5B2FF5E8498558DED52D0C8ACA527F88BDE083`
 
 ---
 
@@ -110,18 +110,18 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 ### Windows PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.28-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.29-setup.exe
 ```
 
-Expected output: `c941b1f3f559d5e910b2a7c890ef70cc8df3365c6f1640002441714e37912849`
+Expected output: `9bbf1953f161058853b6d94ced5b2ff5e8498558ded52d0c8aca527f88bde083`
 
 ### Windows Command Prompt
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.28-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.29-setup.exe SHA256
 ```
 
-Expected output: `c941b1f3f559d5e910b2a7c890ef70cc8df3365c6f1640002441714e37912849`
+Expected output: `9bbf1953f161058853b6d94ced5b2ff5e8498558ded52d0c8aca527f88bde083`
 
 ---
 
