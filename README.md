@@ -6,11 +6,11 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.17
+## 🆕 What's New in 0.3.18
 
-**Installer:** `AtlasLink-0.3.17-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.18-setup.exe` (77.7 MB)
 
-AtlasLink 0.3.17 moves the session toolbar out of the way of the remote desktop and makes relayed sessions steadier.
+AtlasLink 0.3.18 makes streaming smoother on fast and slow connections alike, and tidies up the main window.
 
 ---
 
@@ -155,6 +155,18 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.18 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.18)**
+
+**Installer:** `AtlasLink-0.3.18-setup.exe` (77.7 MB)
+
+AtlasLink 0.3.18 makes streaming smoother on fast and slow connections alike, and tidies up the main window.
+
+**SHA-256:** `0A771FFA39D4A744E67EDD737D21831CD4E251D9015CDE88B85FB9C118211B74`
+
+---
 
 ### 0.3.17 — 2026-10-25
 
