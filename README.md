@@ -21,7 +21,7 @@ Fleet management at scale and a proper support surface for the Agent edition.
 
 🔗 **[Download AtlasLink-0.3.29-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.29/AtlasLink-0.3.29-setup.exe)**
 
-**SHA-256:** `9BBF1953F161058853B6D94CED5B2FF5E8498558DED52D0C8ACA527F88BDE083`
+**SHA-256:** `6D95B4AEB816F7B1C356E32F0E0A9D03EA0222568AC7AF62F82C522628AD31E2`
 
 ---
 
@@ -114,7 +114,7 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.29-setup.exe
 ```
 
-Expected output: `9bbf1953f161058853b6d94ced5b2ff5e8498558ded52d0c8aca527f88bde083`
+Expected output: `6D95B4AEB816F7B1C356E32F0E0A9D03EA0222568AC7AF62F82C522628AD31E2`
 
 ### Windows Command Prompt
 
