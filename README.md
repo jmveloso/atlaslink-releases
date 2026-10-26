@@ -9,8 +9,9 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 ## 🆕 What's New in 0.3.29
 
 **Installer:** `AtlasLink-0.3.29-setup.exe` (77.7 MB)
+**Agent:** `AtlasLink-Agent-0.3.29-setup.exe` (77.7 MB)
 
-**Installers:**
+Fleet management at scale and a proper support surface for the Agent edition.
 
 ---
 
@@ -156,6 +157,19 @@ To upgrade AtlasLink:
 
 ## 📜 Version History
 
+### 0.3.29 — 2026-10-26
+2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.29)**
+
+**Installer:** `AtlasLink-0.3.29-setup.exe` (77.7 MB)
+
+Fleet management at scale and a proper support surface for the Agent edition.
+
+**SHA-256:** `9BBF1953F161058853B6D94CED5B2FF5E8498558DED52D0C8ACA527F88BDE083`
+
+---
+
 ### 0.3.28 — 2026-10-26
 2026-10-26
 
@@ -163,7 +177,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.28-setup.exe` (77.7 MB)
 
-**Installers:**
+Three hardening improvements that make the two-edition split genuinely enterprise-ready.
 
 **SHA-256:** `C941B1F3F559D5E910B2A7C890EF70CC8DF3365C6F1640002441714E37912849`
 
@@ -176,7 +190,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.27-setup.exe` (77.7 MB)
 
-**Installers:**
+A correctness release for the new Agent edition — the "cannot connect out" promise is now **enforced by the server**, not just hidden in the UI.
 
 **SHA-256:** `0094412DAB9E139F3E98CFD4E2DD4C16C9AFAE2A656108CE97149A83909D1DCC`
 
@@ -189,7 +203,7 @@ To upgrade AtlasLink:
 
 **Installer:** `AtlasLink-0.3.26-setup.exe` (77.7 MB)
 
-**Installers:**
+AtlasLink now ships **two editions**: the full client for IT, and **AtlasLink Agent** — a deliberately limited build for the people being helped.
 
 **SHA-256:** `7A7A67D7D39455DC0341E7F54079F3A661936993F35F1325391A1A34C287EF6B`
 
