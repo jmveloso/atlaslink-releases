@@ -6,10 +6,10 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 
 ---
 
-## 🆕 What's New in 0.3.29
+## 🆕 What's New in 0.3.30
 
-**Installer:** `AtlasLink-0.3.29-setup.exe` (77.7 MB)
-**Agent:** `AtlasLink-Agent-0.3.29-setup.exe` (77.7 MB)
+**Installer:** `AtlasLink-0.3.30-setup.exe` (77.7 MB)
+**Agent:** `AtlasLink-Agent-0.3.30-setup.exe` (77.7 MB)
 
 Fleet management at scale and a proper support surface for the Agent edition.
 
@@ -17,11 +17,11 @@ Fleet management at scale and a proper support surface for the Agent edition.
 
 ## 📥 Download
 
-**Latest Release: [AtlasLink 0.3.29](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.29)** (77.7 MB)
+**Latest Release: [AtlasLink 0.3.30](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.30)** (77.7 MB)
 
-🔗 **[Download AtlasLink-0.3.29-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.29/AtlasLink-0.3.29-setup.exe)**
+🔗 **[Download AtlasLink-0.3.30-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.30/AtlasLink-0.3.30-setup.exe)**
 
-**SHA-256:** `6D95B4AEB816F7B1C356E32F0E0A9D03EA0222568AC7AF62F82C522628AD31E2`
+**SHA-256:** `F063022127B56240150385A6EC169DC523C5E1792044721AA3E010D457E45941`
 
 ---
 
@@ -111,15 +111,15 @@ Verify the integrity of the installer by checking its SHA-256 checksum against t
 ### Windows PowerShell
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.29-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.30-setup.exe
 ```
 
-Expected output: `6D95B4AEB816F7B1C356E32F0E0A9D03EA0222568AC7AF62F82C522628AD31E2`
+Expected output: `F063022127B56240150385A6EC169DC523C5E1792044721AA3E010D457E45941`
 
 ### Windows Command Prompt
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.29-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.30-setup.exe SHA256
 ```
 
 Expected output: `9bbf1953f161058853b6d94ced5b2ff5e8498558ded52d0c8aca527f88bde083`
