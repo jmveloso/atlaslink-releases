@@ -11,7 +11,7 @@ AtlasLink is a self-hosted remote desktop solution offering full remote control 
 **Installer:** `AtlasLink-0.3.31-setup.exe` (77.7 MB)
 **Agent:** `AtlasLink-Agent-0.3.31-setup.exe` (77.7 MB)
 
-A picture-quality pass: fewer pixelated moments on constrained links, and better visibility into *why* a session looks the way it does.
+A sharper picture on any link — plus real fleet tooling.
 
 ---
 
@@ -156,6 +156,19 @@ To upgrade AtlasLink:
 ---
 
 ## 📜 Version History
+
+### 0.3.31 — 2026-10-26
+2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.31)**
+
+**Installer:** `AtlasLink-0.3.31-setup.exe` (77.7 MB)
+
+A sharper picture on any link — plus real fleet tooling.
+
+**SHA-256:** `7CAAA7DB9E086E937D5F5637DA35BA9C536B5DB66700FD2C9BE36DB1A411FF48`
+
+---
 
 ### 0.3.30 — 2026-10-26
 2026-10-26
