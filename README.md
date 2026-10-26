@@ -11,15 +11,15 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 
 ## 2. Latest release
 
-**[AtlasLink 0.3.33](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.33)** — Windows, macOS (unsigned zip) and Linux (experimental).
+**[AtlasLink 0.3.34](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.34): ⚠️ INCOMPLETE.** macOS builds are not yet published. Windows and Linux assets are available.
 
 ## 3. Downloads by platform and edition
 
 | Platform | Full Client (IT) | Agent |
 |---|---|---|
-| Windows 10/11 x64 | [AtlasLink-0.3.33-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-0.3.33-setup.exe) (77.7 MB) | [AtlasLink-Agent-0.3.33-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-Agent-0.3.33-setup.exe) (77.7 MB) |
-| Linux x86_64 (experimental) | [AtlasLink-0.3.33-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-0.3.33-linux-x86_64.AppImage) (80.0 MB) | [AtlasLink-Agent-0.3.33-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-Agent-0.3.33-linux-x86_64.AppImage) (80.0 MB) |
-| macOS x64 / arm64 | [AtlasLink-0.3.33-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-0.3.33-mac-x64.zip) / [AtlasLink-0.3.33-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-0.3.33-mac-arm64.zip) | [AtlasLink-Agent-0.3.33-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-Agent-0.3.33-mac-x64.zip) / [AtlasLink-Agent-0.3.33-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.33/AtlasLink-Agent-0.3.33-mac-arm64.zip) |
+| Windows 10/11 x64 | [AtlasLink-0.3.34-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.34/AtlasLink-0.3.34-setup.exe) (77.7 MB) | [AtlasLink-Agent-0.3.34-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.34/AtlasLink-Agent-0.3.34-setup.exe) (77.7 MB) |
+| Linux x86_64 (experimental) | [AtlasLink-0.3.34-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.34/AtlasLink-0.3.34-linux-x86_64.AppImage) (80.0 MB) | [AtlasLink-Agent-0.3.34-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.34/AtlasLink-Agent-0.3.34-linux-x86_64.AppImage) (80.0 MB) |
+| macOS x64 / arm64 | NOT YET PUBLISHED | NOT YET PUBLISHED |
 
 **Full Client vs Agent**
 
@@ -48,14 +48,13 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 |---|---|
 | Windows | Windows 10 or 11, x64 |
 | Linux (experimental) | x86_64 with an X11 session for remote control (XTest). Wayland sessions without X11 are view-only. Not yet validated on real hosts |
-| macOS | Unsigned zip (x64 and arm64). First launch via right-click, then Open. Screen Recording and Accessibility permissions required. |
+| macOS | Builds not yet published |
 | Network | Outbound access to the control server's WebSocket endpoint (`ws://` or `wss://`) |
 
 ## 6. Installation
 
 - **Windows:** run the installer for your edition. It installs per user, and you can choose the folder. Open Settings and enter your organization's control server URL. New devices stay *Pending* until an administrator approves them.
 - **Linux:** `chmod +x AtlasLink-*.AppImage`, then run it. Use an X11 session if this machine will be controlled remotely.
-- **macOS:** unzip, then right-click the app and choose Open. Grant Screen Recording and Accessibility when prompted.
 
 ## 7. Control server requirements
 
@@ -81,48 +80,59 @@ The control server is deployed and managed by your organization's IT administrat
 
 - **Windows:** the app checks for updates about a minute after it starts and every 4 hours after that. It downloads only its own edition's installer and verifies the Ed25519 signature (`.sig`), version, size and SHA-256. It then installs silently when no session is active. It never downgrades, and it installs nothing if verification fails. Manual upgrade: run the newer installer over the existing one. Settings are kept.
 - **Linux:** the app shows that an update is available with a link to this page. Replace the AppImage by hand.
-- **macOS:** the app shows a download link (no silent install). Replace the app from the zip by hand.
+- **macOS:** builds are not yet published.
 
 ## 10. Download verification
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.33-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.34-setup.exe
 ```
-Expected output: `9A3F152D961DDB89D8E1306C3F70434908838E607BB078C476C0DEFB64AE057A`
+Expected output: `7302C833376CF710F50B166988BACA921D7B406DA2C534D406B820FC4CB8ADA3`
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.33-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.34-setup.exe SHA256
 ```
-Expected output: `9a3f152d961ddb89d8e1306c3f70434908838e607bb078c476c0defb64ae057a`
+Expected output: `7302c833376cf710f50b166988baca921d7b406da2c534d406b820fc4cb8ada3`
 
 PowerShell prints uppercase and `certutil` prints lowercase. The values are the same.
 
 | File | SHA-256 |
 |---|---|
-| AtlasLink-0.3.33-setup.exe | `9A3F152D961DDB89D8E1306C3F70434908838E607BB078C476C0DEFB64AE057A` |
-| AtlasLink-Agent-0.3.33-setup.exe | `0FC8F4CD1B824741DD58A607B181BE9D00E8CF456BF2C7375D9EC998E6AA70AC` |
-| AtlasLink-0.3.33-linux-x86_64.AppImage | `D635BD3421AC471F2BDADBA6783C17957CC6A9FA2F12AEDDC3C8C06482DF3E6D` |
-| AtlasLink-Agent-0.3.33-linux-x86_64.AppImage | `826175E8B26AB37F905578856381591BF8D7381490BF6C2574D176A6BE18FF24` |
-| AtlasLink-0.3.33-mac-x64.zip | `3DC5427EB630854DE24C8DEC80A757B10C0ABF645AE95D8C1CF0D719D2F96810` |
-| AtlasLink-0.3.33-mac-arm64.zip | `25E146FD9BA0B14DB406EE27F275D0E9C2FDC3A2713BDF3805F3E6074FF68919` |
-| AtlasLink-Agent-0.3.33-mac-x64.zip | `10B3DFB2E45DA35805203FDBDA8E67B723C0D06CB45F75B997E20A7EE688AF8A` |
-| AtlasLink-Agent-0.3.33-mac-arm64.zip | `425E1F047D041B446C0BEB548694003743723D9DFDEB9995283F3807AADA335C` |
+| AtlasLink-0.3.34-setup.exe | `7302C833376CF710F50B166988BACA921D7B406DA2C534D406B820FC4CB8ADA3` |
+| AtlasLink-Agent-0.3.34-setup.exe | `2A58D9F81DBE871EDB7CF6225225FEF5B6D81F49AFF9F252E6A993FD22DB1B1A` |
+| AtlasLink-0.3.34-linux-x86_64.AppImage | `87D71CAAE6C58E1429E88292F6C6312AF4BB9DAE429406A19019E14E1F85B49E` |
+| AtlasLink-Agent-0.3.34-linux-x86_64.AppImage | `A3FA051266005D56B1C54E427A8B8CDB3D43AB8F8871F217DCFEA069389CC152` |
 
 ## 11. Known limitations
 
+- 0.3.34 is incomplete: no macOS builds yet.
 - Linux is experimental: built in CI but not yet validated on real hosts. Remote control needs X11 (Wayland without X11 is view-only). Updates are manual.
-- macOS builds are unsigned (first launch via right-click, then Open) and need Screen Recording and Accessibility permissions.
+- macOS builds, when published, will be unsigned (first launch via right-click, then Open) and need Screen Recording and Accessibility permissions.
 - Both editions share the same settings folder if installed for the same Windows user.
 
 ## 📜 Version History
+
+### 0.3.35 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.35)**
+
+**Installer:** `AtlasLink-0.3.35-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
 
 ### 0.3.34 — 2026-10-26
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.34)**
 
-**Installer:** `AtlasLink-0.3.34-setup.exe` (not published)
+**Installer:** `AtlasLink-0.3.34-setup.exe` (77.7 MB)
 
-**SHA-256:** *(see release page)*
+**Agent:** `AtlasLink-Agent-0.3.34-setup.exe` (77.7 MB)
+
+**SHA-256:** `7302C833376CF710F50B166988BACA921D7B406DA2C534D406B820FC4CB8ADA3`
+
+**Agent SHA-256:** `2A58D9F81DBE871EDB7CF6225225FEF5B6D81F49AFF9F252E6A993FD22DB1B1A`
 
 ---
 
