@@ -11,15 +11,15 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 
 ## 2. Latest release
 
-**[AtlasLink 0.3.35](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.35)** — Windows, macOS (unsigned zip) and Linux (experimental).
+**[AtlasLink 0.3.36](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.36)** — Windows, macOS (unsigned zip) and Linux (experimental).
 
 ## 3. Downloads by platform and edition
 
 | Platform | Full Client (IT) | Agent |
 |---|---|---|
-| Windows 10/11 x64 | [AtlasLink-0.3.35-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-0.3.35-setup.exe) (77.7 MB) | [AtlasLink-Agent-0.3.35-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-Agent-0.3.35-setup.exe) (77.7 MB) |
-| Linux x86_64 (experimental) | [AtlasLink-0.3.35-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-0.3.35-linux-x86_64.AppImage) (80.0 MB) | [AtlasLink-Agent-0.3.35-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-Agent-0.3.35-linux-x86_64.AppImage) (80.0 MB) |
-| macOS x64 / arm64 | [AtlasLink-0.3.35-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-0.3.35-mac-x64.zip) / [AtlasLink-0.3.35-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-0.3.35-mac-arm64.zip) | [AtlasLink-Agent-0.3.35-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-Agent-0.3.35-mac-x64.zip) / [AtlasLink-Agent-0.3.35-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.35/AtlasLink-Agent-0.3.35-mac-arm64.zip) |
+| Windows 10/11 x64 | [AtlasLink-0.3.36-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-setup.exe) (77.7 MB) | [AtlasLink-Agent-0.3.36-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-setup.exe) (77.7 MB) |
+| Linux x86_64 (experimental) | [AtlasLink-0.3.36-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-linux-x86_64.AppImage) (80.0 MB) | [AtlasLink-Agent-0.3.36-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-linux-x86_64.AppImage) (80.0 MB) |
+| macOS x64 / arm64 | [AtlasLink-0.3.36-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-mac-x64.zip) / [AtlasLink-0.3.36-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-mac-arm64.zip) | [AtlasLink-Agent-0.3.36-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-mac-x64.zip) / [AtlasLink-Agent-0.3.36-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-mac-arm64.zip) |
 
 **Full Client vs Agent**
 
@@ -86,27 +86,27 @@ The control server is deployed and managed by your organization's IT administrat
 ## 10. Download verification
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.35-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.36-setup.exe
 ```
-Expected output: `FC1B7276D26CA2BD8981D180C4A565CFCD8B62E9886DEC24E4256F0A62DD88FF`
+Expected output: `106AA4B3B5B174A21B8C2FA0D7AAB6F05AB330DDE68B047D646CC69998C296FA`
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.35-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.36-setup.exe SHA256
 ```
-Expected output: `fc1b7276d26ca2bd8981d180c4a565cfcd8b62e9886dec24e4256f0a62dd88ff`
+Expected output: `106aa4b3b5b174a21b8c2fa0d7aab6f05ab330dde68b047d646cc69998c296fa`
 
 PowerShell prints uppercase and `certutil` prints lowercase. The values are the same.
 
 | File | SHA-256 |
 |---|---|
-| AtlasLink-0.3.35-setup.exe | `FC1B7276D26CA2BD8981D180C4A565CFCD8B62E9886DEC24E4256F0A62DD88FF` |
-| AtlasLink-Agent-0.3.35-setup.exe | `425DD25EEE6849296D29EF76DA07F448286ECB2B9DB88143682DFDB6D0F0998E` |
-| AtlasLink-0.3.35-linux-x86_64.AppImage | `499161D1CEA323AF4504D65670D6A28B1839F1C5D7AE6CBF289F451C1D04DDB2` |
-| AtlasLink-Agent-0.3.35-linux-x86_64.AppImage | `F6961EF2165A486AE2FAE86EEF559E07F685BD66711539D7D13A99D182D04B48` |
-| AtlasLink-0.3.35-mac-x64.zip | `96598DA48B689BC904E5645D00E1CFCB18E2DAEE666B4ADC9FDA8B60FCD5F553` |
-| AtlasLink-0.3.35-mac-arm64.zip | `99E5646772A4E71F662D8FDF1386068630F57409EEBC4ED5FE6A0307ABAC4C57` |
-| AtlasLink-Agent-0.3.35-mac-x64.zip | `93C492EDA3632F649396029E353BE7A04C4FB70E9A8A63F779337AAF446A06C2` |
-| AtlasLink-Agent-0.3.35-mac-arm64.zip | `A831CF9B8463B566DEF73FD782B1FF1BC068451625583C8F562CB3699131433E` |
+| AtlasLink-0.3.36-setup.exe | `106AA4B3B5B174A21B8C2FA0D7AAB6F05AB330DDE68B047D646CC69998C296FA` |
+| AtlasLink-Agent-0.3.36-setup.exe | `B2C0633629A2FBBA7315793B3FCC4F485B61BD4D4738D90004777BA26CC43F59` |
+| AtlasLink-0.3.36-linux-x86_64.AppImage | `6A88BABA1C2670699DA2A606ACB5E101CFBFC36CE775FE57686DF6F072931F65` |
+| AtlasLink-Agent-0.3.36-linux-x86_64.AppImage | `1C63D9BE92D3EE4A395E8A270E4932F0D722D56C57D5872AE218DF46037A3991` |
+| AtlasLink-0.3.36-mac-x64.zip | `06B3591FF4A6473BEE51ED2051C9B592C4A85A00136B504EBECDF326BDED2C7C` |
+| AtlasLink-0.3.36-mac-arm64.zip | `5CB39B138A2CA51F5DFEB7495547D02C2A5553F9EDBB4EE58CE543DD40B58329` |
+| AtlasLink-Agent-0.3.36-mac-x64.zip | `11A617DCFE6D6CF1945F332F1DAB08E56FC31E7BCA3312E2CF61D29D05EE6212` |
+| AtlasLink-Agent-0.3.36-mac-arm64.zip | `1EAC276628E14BF5811070628E830983BC11289841603AD5E80D7A98404FFEEE` |
 
 ## 11. Known limitations
 
@@ -116,13 +116,17 @@ PowerShell prints uppercase and `certutil` prints lowercase. The values are the 
 
 ## 📜 Version History
 
-### 0.3.36 — 2026-10-26
+### 0.3.36 — 2026-10-27
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.36)**
 
-**Installer:** `AtlasLink-0.3.36-setup.exe` (not published)
+**Installer:** `AtlasLink-0.3.36-setup.exe` (77.7 MB)
 
-**SHA-256:** *(see release page)*
+**Agent:** `AtlasLink-Agent-0.3.36-setup.exe` (77.7 MB)
+
+**SHA-256:** `106AA4B3B5B174A21B8C2FA0D7AAB6F05AB330DDE68B047D646CC69998C296FA`
+
+**Agent SHA-256:** `B2C0633629A2FBBA7315793B3FCC4F485B61BD4D4738D90004777BA26CC43F59`
 
 ---
 
