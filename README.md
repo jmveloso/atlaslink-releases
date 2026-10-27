@@ -18,6 +18,7 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 | Platform | Full Client (IT) | Agent |
 |---|---|---|
 | Windows 10/11 x64 | [AtlasLink-0.3.36-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-setup.exe) (77.7 MB) | [AtlasLink-Agent-0.3.36-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-setup.exe) (77.7 MB) |
+| Windows x86 (32-bit) | — | NOT YET PUBLISHED |
 | Linux x86_64 (experimental) | [AtlasLink-0.3.36-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-linux-x86_64.AppImage) (80.0 MB) | [AtlasLink-Agent-0.3.36-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-linux-x86_64.AppImage) (80.0 MB) |
 | macOS x64 / arm64 | [AtlasLink-0.3.36-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-mac-x64.zip) / [AtlasLink-0.3.36-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-0.3.36-mac-arm64.zip) | [AtlasLink-Agent-0.3.36-mac-x64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-mac-x64.zip) / [AtlasLink-Agent-0.3.36-mac-arm64.zip](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.36/AtlasLink-Agent-0.3.36-mac-arm64.zip) |
 
