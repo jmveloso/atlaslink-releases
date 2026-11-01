@@ -117,6 +117,281 @@ PowerShell prints uppercase and `certutil` prints lowercase. The values are the 
 
 ## 📜 Version History
 
+### 0.3.69 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.69)**
+
+**Installer:** `AtlasLink-0.3.69-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.68 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.68)**
+
+**Installer:** `AtlasLink-0.3.68-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.67 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.67)**
+
+**Installer:** `AtlasLink-0.3.67-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.66 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.66)**
+
+**Installer:** `AtlasLink-0.3.66-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.65 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.65)**
+
+**Installer:** `AtlasLink-0.3.65-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.64 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.64)**
+
+**Installer:** `AtlasLink-0.3.64-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.63 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.63)**
+
+**Installer:** `AtlasLink-0.3.63-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.62 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.62)**
+
+**Installer:** `AtlasLink-0.3.62-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.61 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.61)**
+
+**Installer:** `AtlasLink-0.3.61-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.60 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.60)**
+
+**Installer:** `AtlasLink-0.3.60-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.59 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.59)**
+
+**Installer:** `AtlasLink-0.3.59-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.58 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.58)**
+
+**Installer:** `AtlasLink-0.3.58-setup.exe` (not published)
+
+`screenstream` (`off`/`pilot`, default `off`) and
+
+- **Central ScreenStream gate.** Two new policy fields —
+- **Mid-session revocation.** Removing a device or switching the mode
+- **Admin Console controls.** Security & access gains a "ScreenStream
+- **Build-time helper verification.** The Windows capture helper now
+- **Session diagnostics** now show the active transport, content
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.57 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.57)**
+
+**Installer:** `AtlasLink-0.3.57-setup.exe` (not published)
+
+automatic fallbacks for peers without AV1). AV1's screen-content tools
+
+- Remote sessions now negotiate AV1 first (VP9 and H.264 remain as
+- Sessions to viewers without AV1 decode (older browsers, Safari) fall
+- Browser viewer bundle rebuilt to prefer AV1 as well.
+- New diagnostics-only codec-order override for development builds
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.56 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.56)**
+
+**Installer:** `AtlasLink-0.3.56-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.55 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.55)**
+
+**Installer:** `AtlasLink-0.3.55-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.54 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.54)**
+
+**Installer:** `AtlasLink-0.3.54-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.53 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.53)**
+
+**Installer:** `AtlasLink-0.3.53-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.52 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.52)**
+
+**Installer:** `AtlasLink-0.3.52-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.51 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.51)**
+
+**Installer:** `AtlasLink-0.3.51-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.50 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.50)**
+
+**Installer:** `AtlasLink-0.3.50-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.49 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.49)**
+
+**Installer:** `AtlasLink-0.3.49-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.48 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.48)**
+
+**Installer:** `AtlasLink-0.3.48-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.47 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.47)**
+
+**Installer:** `AtlasLink-0.3.47-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.46 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.46)**
+
+**Installer:** `AtlasLink-0.3.46-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.45 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.45)**
+
+**Installer:** `AtlasLink-0.3.45-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
+### 0.3.44 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.44)**
+
+**Installer:** `AtlasLink-0.3.44-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
 ### 0.3.43 — 2026-10-27
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.43)**
