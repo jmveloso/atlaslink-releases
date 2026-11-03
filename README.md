@@ -11,15 +11,15 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 
 ## 2. Latest release
 
-**[AtlasLink 0.3.73](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.73): ⚠️ INCOMPLETE.** macOS builds are not yet published. Windows and Linux assets are available.
+**[AtlasLink 0.3.74](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.74): ⚠️ INCOMPLETE.** macOS builds are not yet published. Windows and Linux assets are available.
 
 ## 3. Downloads by platform and edition
 
 | Platform | Full Client (IT) | Agent |
 |---|---|---|
-| Windows 10/11 x64 | [AtlasLink-0.3.73-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.73/AtlasLink-0.3.73-setup.exe) (77.9 MB) | [AtlasLink-Agent-0.3.73-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.73/AtlasLink-Agent-0.3.73-setup.exe) (77.9 MB) |
-| Windows x86 (32-bit) | — | [AtlasLink-Agent-0.3.73-setup-ia32.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.73/AtlasLink-Agent-0.3.73-setup-ia32.exe) (72.4 MB) |
-| Linux x86_64 (experimental) | [AtlasLink-0.3.73-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.73/AtlasLink-0.3.73-linux-x86_64.AppImage) (80.2 MB) | [AtlasLink-Agent-0.3.73-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.73/AtlasLink-Agent-0.3.73-linux-x86_64.AppImage) (80.2 MB) |
+| Windows 10/11 x64 | [AtlasLink-0.3.74-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.74/AtlasLink-0.3.74-setup.exe) (77.9 MB) | [AtlasLink-Agent-0.3.74-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.74/AtlasLink-Agent-0.3.74-setup.exe) (77.9 MB) |
+| Windows x86 (32-bit) | — | [AtlasLink-Agent-0.3.74-setup-ia32.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.74/AtlasLink-Agent-0.3.74-setup-ia32.exe) (72.4 MB) |
+| Linux x86_64 (experimental) | [AtlasLink-0.3.74-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.74/AtlasLink-0.3.74-linux-x86_64.AppImage) (80.2 MB) | [AtlasLink-Agent-0.3.74-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.74/AtlasLink-Agent-0.3.74-linux-x86_64.AppImage) (80.2 MB) |
 | macOS x64 / arm64 | NOT YET PUBLISHED | NOT YET PUBLISHED |
 
 **Full Client vs Agent**
@@ -86,40 +86,44 @@ The control server is deployed and managed by your organization's IT administrat
 ## 10. Download verification
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.73-setup.exe
+Get-FileHash -Algorithm SHA256 .\AtlasLink-0.3.74-setup.exe
 ```
-Expected output: `D9DEA61FE7CFC457331DF052B9385EC8FA7822F503D37E7B2E9874B2DB03BD61`
+Expected output: `F0D147DB9A2CC0455C001410954759C067F5D5ECFB23BB6F3F3352F3AEA43397`
 
 ```cmd
-certutil -hashfile AtlasLink-0.3.73-setup.exe SHA256
+certutil -hashfile AtlasLink-0.3.74-setup.exe SHA256
 ```
-Expected output: `d9dea61fe7cfc457331df052b9385ec8fa7822f503d37e7b2e9874b2db03bd61`
+Expected output: `f0d147db9a2cc0455c001410954759c067f5d5ecfb23bb6f3f3352f3aea43397`
 
 PowerShell prints uppercase and `certutil` prints lowercase. The values are the same.
 
 | File | SHA-256 |
 |---|---|
-| AtlasLink-0.3.73-setup.exe | `D9DEA61FE7CFC457331DF052B9385EC8FA7822F503D37E7B2E9874B2DB03BD61` |
-| AtlasLink-Agent-0.3.73-setup.exe | `7C1865FD57C0FE89FD310CB83BE0135E6E4517C3B59E35835C21F8C148AF1ED2` |
-| AtlasLink-0.3.73-linux-x86_64.AppImage | `473668115F12DE19607689E3BFB27DCEB2FF7C58716E92B748AE98DFEF92C5B2` |
-| AtlasLink-Agent-0.3.73-linux-x86_64.AppImage | `92A563AE01FEB6A5631C8B4B6BC1892A0E64419D3D23332115C4C602405EE2EB` |
+| AtlasLink-0.3.74-setup.exe | `F0D147DB9A2CC0455C001410954759C067F5D5ECFB23BB6F3F3352F3AEA43397` |
+| AtlasLink-Agent-0.3.74-setup.exe | `5EEE8E330CDDB09CD5A8CA154460870FD134C89048E7121FAC4F9B11ACAA8BA8` |
+| AtlasLink-0.3.74-linux-x86_64.AppImage | `0F530096D8FAC9334D5147B91221EF150BDEDEBCED9DD28F73001957BCB16C14` |
+| AtlasLink-Agent-0.3.74-linux-x86_64.AppImage | `5A9F0923A516403B871CF671BF756C89C10CF93296F4E33B46B625BFED66ACC0` |
 
 ## 11. Known limitations
 
-- 0.3.73 is incomplete: no macOS builds yet.
+- 0.3.74 is incomplete: no macOS builds yet.
 - Linux is experimental: built in CI but not yet validated on real hosts. Remote control needs X11 (Wayland without X11 is view-only). Updates are manual.
 - macOS builds, when published, will be unsigned (first launch via right-click, then Open) and need Screen Recording and Accessibility permissions.
 - Both editions share the same settings folder if installed for the same Windows user.
 
 ## 📜 Version History
 
-### 0.3.74 — 2026-10-26
+### 0.3.74 — 2026-11-03
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.74)**
 
-**Installer:** `AtlasLink-0.3.74-setup.exe` (not published)
+**Installer:** `AtlasLink-0.3.74-setup.exe` (77.9 MB)
 
-**SHA-256:** *(see release page)*
+**Agent:** `AtlasLink-Agent-0.3.74-setup.exe` (77.9 MB)
+
+**SHA-256:** `F0D147DB9A2CC0455C001410954759C067F5D5ECFB23BB6F3F3352F3AEA43397`
+
+**Agent SHA-256:** `5EEE8E330CDDB09CD5A8CA154460870FD134C89048E7121FAC4F9B11ACAA8BA8`
 
 ---
 
