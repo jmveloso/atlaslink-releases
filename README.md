@@ -19,7 +19,7 @@ AtlasLink connects IT staff to managed computers through a self-hosted control s
 |---|---|---|
 | Windows 10/11 x64 | [AtlasLink-0.3.77-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-0.3.77-setup.exe) (77.9 MB) | [AtlasLink-Agent-0.3.77-setup.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-Agent-0.3.77-setup.exe) (77.9 MB) |
 | Windows x86 (32-bit) | — | [AtlasLink-Agent-0.3.77-setup-ia32.exe](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-Agent-0.3.77-setup-ia32.exe) (72.4 MB) |
-| Linux x86_64 (experimental) | [AtlasLink-0.3.76-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-0.3.76-linux-x86_64.AppImage) (0.0 MB) | [AtlasLink-Agent-0.3.76-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-Agent-0.3.76-linux-x86_64.AppImage) (0.0 MB) |
+| Linux x86_64 (experimental) | [AtlasLink-0.3.77-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-0.3.77-linux-x86_64.AppImage) (80.2 MB) | [AtlasLink-Agent-0.3.77-linux-x86_64.AppImage](https://github.com/jmveloso/atlaslink-releases/releases/download/v0.3.77/AtlasLink-Agent-0.3.77-linux-x86_64.AppImage) (80.2 MB) |
 | macOS x64 / arm64 | NOT YET PUBLISHED | NOT YET PUBLISHED |
 
 **Full Client vs Agent**
@@ -101,8 +101,8 @@ PowerShell prints uppercase and `certutil` prints lowercase. The values are the 
 |---|---|
 | AtlasLink-0.3.77-setup.exe | `FBC2860F9F876A023FEA0C50BC46EB24540DA908BA9E6BB33999BAF8ED801CE1` |
 | AtlasLink-Agent-0.3.77-setup.exe | `5854E9765D673DCEBDBD04009AEE5051D36C55DFF87103EB0EF7AB0E884E03AA` |
-| AtlasLink-0.3.76-linux-x86_64.AppImage | `A12E58DF58AA9C691242CE9F4231B38B2C6AC517F3801DEA3AEA78BB7F86191A` |
-| AtlasLink-Agent-0.3.76-linux-x86_64.AppImage | `BF4C4AE2861AB972F3D934F03267F95785AA0760EDE157FD1DC9868C7EC4A4A9` |
+| AtlasLink-0.3.77-linux-x86_64.AppImage | `718C3AD7B1FAE6943F330773B4F35A478537F9984580ED0B9901AA03569D42C3` |
+| AtlasLink-Agent-0.3.77-linux-x86_64.AppImage | `81B7C85C169B16220B6CC68CE6D62060EA4C5A244ED4E9EE2B19B7BE4A5016BE` |
 
 ## 11. Known limitations
 
@@ -113,17 +113,27 @@ PowerShell prints uppercase and `certutil` prints lowercase. The values are the 
 
 ## 📜 Version History
 
-### 0.3.76 — 2026-11-04
+### 0.3.78 — 2026-10-26
 
-**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.76)**
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.78)**
 
-**Installer:** `AtlasLink-0.3.76-setup.exe` (77.9 MB)
+**Installer:** `AtlasLink-0.3.78-setup.exe` (not published)
 
-**Agent:** `AtlasLink-Agent-0.3.76-setup.exe` (77.9 MB)
+**SHA-256:** *(see release page)*
 
-**SHA-256:** `D998672DD193D732DD6B07C086FF18C90C5F115B0E4DEA11A3203948717C4D31`
+---
 
-**Agent SHA-256:** `77A91BC1F910686F2B24728C28B02F39628637B63812C99F77D867AF00BFEDB3`
+### 0.3.77 — 2026-11-04
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.77)**
+
+**Installer:** `AtlasLink-0.3.77-setup.exe` (77.9 MB)
+
+**Agent:** `AtlasLink-Agent-0.3.77-setup.exe` (77.9 MB)
+
+**SHA-256:** `FBC2860F9F876A023FEA0C50BC46EB24540DA908BA9E6BB33999BAF8ED801CE1`
+
+**Agent SHA-256:** `5854E9765D673DCEBDBD04009AEE5051D36C55DFF87103EB0EF7AB0E884E03AA`
 
 ---
 
