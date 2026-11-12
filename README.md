@@ -115,6 +115,16 @@ PowerShell prints uppercase and `certutil` prints lowercase. The values are the 
 
 ## 📜 Version History
 
+### 0.3.82 — 2026-10-26
+
+**[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.82)**
+
+**Installer:** `AtlasLink-0.3.82-setup.exe` (not published)
+
+**SHA-256:** *(see release page)*
+
+---
+
 ### 0.3.81 — 2026-10-26
 
 **[Release Notes](https://github.com/jmveloso/atlaslink-releases/releases/tag/v0.3.81)**
